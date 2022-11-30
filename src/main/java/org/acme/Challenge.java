@@ -40,4 +40,11 @@ public class Challenge {
         return search.parseHotelData();
     }
 
+    @GET
+    @Path("/split")
+    @Produces(MediaType.TEXT_PLAIN)
+    public int splitData() {
+        return search.splittingOffersByDays();
+    }
+
 }
